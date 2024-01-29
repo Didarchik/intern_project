@@ -1,0 +1,88 @@
+<div class="wrapper">
+    <div class="header">
+        <div class="header-block">
+            <img src="../../../../assets/info/persons.png">
+        </div>
+        <div class="header-block">
+            <img src="../../../../assets/info/logo.png">
+        </div>
+        <div class="header-block header-block-exception header-block-large" 
+        (click)="onSelect('date')"
+        [style.background-color] = "toolBarOptionsBackground['date']"
+        [style.border-bottom] = "toolBarOptionsBorderBottom['date']"
+        >
+            <span class="less-visible">Рудник &lt;&lt;Алмазный&gt;&gt;</span>
+            <span class="normal">10:08  28.ФЕВ.2020</span>
+            <div class="bottom">
+                <img src="../../../assets/info/lines.png">
+                <img src="../../../assets/info/lines.png">
+                <img src="../../../assets/info/lines.png">
+                <img class="exception" src="../../../assets/info/middle.png">
+                <img src="../../../assets/info/lines.png">
+                <img src="../../../assets/info/lines.png">
+                <img src="../../../assets/info/lines.png">
+            </div>
+        </div>
+        <div class="header-block header-block-large" 
+        (click)="onSelect('give fonar')"
+        [style.background-color] = "toolBarOptionsBackground['give fonar']"
+        [style.border-bottom] = "toolBarOptionsBorderBottom['give fonar']"
+        >
+            <img src="../../../../assets/info/fonar.png">
+            <span class="header-text">Выдача Фонарей</span>
+        </div>
+        <div class="header-block" 
+        (click)="onSelect('personal')"
+        [style.background-color] = "toolBarOptionsBackground['personal']"
+        [style.border-bottom] = "toolBarOptionsBorderBottom['personal']"
+        >
+            <img src="../../../../assets/info/personal.png">
+            <span class="header-text">Персонал</span>
+        </div>
+        <div class="header-block" style="padding-right: 10px;" 
+        (click)="onSelect('ratio')"
+        [style.background-color] = "toolBarOptionsBackground['ratio']"
+        [style.border-bottom] = "toolBarOptionsBorderBottom['ratio']"
+        >
+            <img src="../../../../assets/info/radio-svgrepo-com 1.png">
+            <span class="">Рации</span>
+        </div>
+        <div class="header-block" 
+        (click)="onSelect('fonar setting')"
+        [style.background-color] = "toolBarOptionsBackground['fonar setting']"
+        [style.border-bottom] = "toolBarOptionsBorderBottom['fonar setting']"
+        >
+            <img src="../../../../assets/info/change.png">
+            <span class="header-text">Ремонт Фонарей</span>
+        </div>
+        <div class="header-block" 
+        (click)="onSelect('tabel')"
+        [style.background-color] = "toolBarOptionsBackground['tabel']"
+        [style.border-bottom] = "toolBarOptionsBorderBottom['tabel']"
+        >
+            <img src="../../../../assets/info/tabel.png">
+            <span class="header-text">Табель</span>
+        </div>
+        <div class="header-block" 
+        (click)="onSelect('orgstructure')"
+        [style.background-color] = "toolBarOptionsBackground['orgstructure']"
+        [style.border-bottom] = "toolBarOptionsBorderBottom['orgstructure']"
+        >
+            <img src="../../../../assets/info/org.png">
+            <span class="header-text">Оргструктура</span>
+        </div>
+        <div class="header-block header-block-largest" (click)="onSelect('dispetcher')">
+            <img src="../../../../assets/info/info.png">
+            <div class="header-info-block d-flex flex-column">
+                <span class="header-info-block-text">8:03 16.дек.2019</span>
+                <span class="header-info-block-text">Фамилия И.О. – Диспетчер</span>
+            </div>
+        </div>
+        <div class="header-block" (click)="onSelect('settings')">
+            <img src="../../../../assets/info/settings.png">
+        </div>
+        <div class="header-block" (click)="onSelect('logout')">
+            <img src="../../../../assets/auth/enter.png">
+        </div>
+    </div>
+</div>

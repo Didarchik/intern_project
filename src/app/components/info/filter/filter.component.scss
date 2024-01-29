@@ -1,0 +1,108 @@
+.search-block{
+
+    height: 50px;
+    background-color: rgba(34, 34, 34, 0.50);
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .search-block-left-side{
+        height: 50px;
+        width: 100%; 
+        max-width: 1000px; 
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 20px;
+            width: 35px;
+        }
+        span{
+            color: #B3B3B3;
+            font-size: 18px;
+            padding: 0px 22px 1px 0px;
+            text-align: center;
+        }
+        .search-container{
+            border: 1px solid #4D4D4D;
+            padding: 5px;
+            background-color: #222;
+            width: 400px;
+            border: none;
+            input{
+                background-color: #222;
+                width: 90%;
+                border: none;
+                color: wheat;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+
+        .search-numbers{
+            padding: 5px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+            background-color: #222;
+            input{
+                margin-left: 5px;
+                padding: 5px;
+                border: 1px solid #4D4D4D;
+                color: wheat;
+                width: 120px;
+                background-color: #222;
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            img{
+                margin-left: 10px;
+                cursor: pointer;
+                width: 17.5px;
+                height: 17.5px;
+            }
+        }
+    }
+
+
+    .search-block-right-side{
+        display: flex;
+        align-items: center;
+        .adding-radio{
+            display: flex;
+            align-items: center;
+            background-color: #333333;
+            padding: 5px;
+            cursor: pointer;
+            span{
+                padding: 5px;
+                color: #B3B3B3;
+            }
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        .dropdown{
+            padding: 10px;
+            max-width: 220px;
+            max-height: 50px;
+            background-color: #222;
+            border: none;
+            color: #808080;
+            margin-left: 10px;
+        }
+        .search-add{
+            margin-left: 10px;
+            max-width: 40px;
+            max-height: 40px;
+            background-color: #222222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
