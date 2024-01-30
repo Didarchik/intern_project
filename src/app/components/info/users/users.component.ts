@@ -11,10 +11,11 @@ import { users } from "../users/data"
 export class UsersComponent implements OnChanges{
   color:string[] = [];
   fonarClick:boolean[] = [];
-  newArr = users;
-  newArr2 = users;
+  newArr: User[] = [];
   @Input() inputVal;
+  
   constructor(){  
+    this.newArr = users;
     for (let i = 0; i < this.newArr.length; i++){
       this.fonarClick[i] = false;
       if (i % 2 == 0){
@@ -26,11 +27,29 @@ export class UsersComponent implements OnChanges{
     }
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    //console.log("Users page: ", this.inputVal.inputStol);
-    
-    this.newArr = users
-    .filter(item => item.name.toLowerCase().includes(this.inputVal.inputVal.toLowerCase()));  
-  
+  onDeleteUser(user){
+    this.newArr = this.newArr.filter(item => !(item.id == user.id && item.name == user.name && item.id_taga == user.id_taga));
   }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log("Test: ", this.newArr);
+    this.newArr = users.filter(item => {
+      const nameFilter = this.inputVal.inputName ? item.name.toLowerCase().includes(this.inputVal.inputName.toLowerCase()) : true;
+      const stolFilter = this.inputVal.inputStol ? item.id_stola == this.inputVal.inputStol : true;
+      const mestoFilter = this.inputVal.inputMesto ? item.id_mesto == this.inputVal.inputMesto : true;
+
+      return nameFilter && stolFilter && mestoFilter;
+    })
+  } 
+
+
+}
+interface User {
+  id: number,
+  name: string,
+  id_taga: number,
+  id_stola: number,
+  id_mesto: number,
+  date: string,
+  place: string,
 }

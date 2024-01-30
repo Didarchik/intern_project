@@ -124,6 +124,12 @@
                 font-size: 14px;
                 font-weight: 400;
             }
+            .delete-button:hover{
+                cursor: pointer;
+                .delete-button-icon{
+                    fill: red;
+                }
+            }   
         }
     }
 }

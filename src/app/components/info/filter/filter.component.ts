@@ -18,7 +18,13 @@ export class FilterComponent{
   }
 
   getInputVal(){    
-    this.inputValChange.emit({inputVal: this.inputVal, inputStol: this.inputStol});
+    this.inputValChange.emit({inputName: this.inputVal, inputStol: this.inputStol, inputMesto: this.inputMesto});
+  }
+
+  onDelete(){
+    this.inputStol = null;
+    this.inputMesto = null;
+    this.inputValChange.emit({inpuName: this.inputVal, inputStol: this.inputStol, inputMesto: this.inputMesto});
   }
 
   onSelectChange(event: Event): void {
