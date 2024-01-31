@@ -51,5 +51,7 @@ export class AuthorizationComponent implements OnInit{
         }
       }
     }
+
+    
   }
 }
