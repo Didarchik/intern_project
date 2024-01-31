@@ -1,4 +1,7 @@
 import {Component, EventEmitter, Output} from '@angular/core';
+import {MatDialog} from '@angular/material/dialog'
+  import {MatButtonModule} from '@angular/material/button';
+import { AddRadioComponent } from '../../add-radio/add-radio.component';
 
 @Component({
   selector: 'app-filter',
@@ -13,7 +16,7 @@ export class FilterComponent{
   @Output() inputValChange = new EventEmitter<{}>();
 
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
     this.selectedOption = this.options[0].value;
   }
 
@@ -37,4 +40,10 @@ export class FilterComponent{
     { value: 'option2', label: 'Option 2' },
     { value: 'option3', label: 'Option 3' },
   ];
+
+  openDialog() : void{
+    this.dialog.open(AddRadioComponent, {
+      width: '500px'
+    })
+  }
 }

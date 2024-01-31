@@ -27,6 +27,10 @@ export class UsersComponent implements OnChanges{
     }
   }
 
+  onUpdateUser(id: number){
+    console.log(id, this.newArr[id]);
+  }
+
   onDeleteUser(user){
     this.newArr = this.newArr.filter(item => !(item.id == user.id && item.name == user.name && item.id_taga == user.id_taga));
   }

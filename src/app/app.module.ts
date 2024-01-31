@@ -16,6 +16,13 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { ToolBarComponent } from './components/toolbar/toolbar.component';
 import { FilterComponent } from './components/info/filter/filter.component';
 import { TestingComponent } from './components/testing/testing.component';
+import {MatDialog,
+  MatDialogRef,
+  MatDialogActions,
+  MatDialogClose,
+  MatDialogTitle,
+  MatDialogContent} from '@angular/material/dialog'
+  import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -36,7 +43,8 @@ import { TestingComponent } from './components/testing/testing.component';
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
