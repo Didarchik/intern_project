@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Output} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog'
   import {MatButtonModule} from '@angular/material/button';
-import { AddRadioComponent } from '../../add-radio/add-radio.component';
+import { AddRadioComponent } from '../add-radio/add-radio.component';
 
 @Component({
   selector: 'app-filter',
@@ -43,7 +43,6 @@ export class FilterComponent{
 
   openDialog() : void{
     this.dialog.open(AddRadioComponent, {
-      width: '500px'
     })
   }
 }

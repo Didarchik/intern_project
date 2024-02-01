@@ -11,7 +11,7 @@ import { AuthorizationComponent } from './components/authorization/authorization
 import { InfoComponent } from './components/info/info.component';
 import { UsersComponent } from './components/info/users/users.component';
 import {FormControl, ReactiveFormsModule} from '@angular/forms';
-import { AddRadioComponent } from './components/add-radio/add-radio.component';
+import { AddRadioComponent } from './components/info/add-radio/add-radio.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ToolBarComponent } from './components/toolbar/toolbar.component';
 import { FilterComponent } from './components/info/filter/filter.component';

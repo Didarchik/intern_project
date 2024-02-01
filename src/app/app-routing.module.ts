@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { AuthorizationComponent } from './components/authorization/authorization.component';
 import { InfoComponent } from './components/info/info.component';
 import { ToolBarComponent } from './components/toolbar/toolbar.component';
-import { AddRadioComponent } from './components/add-radio/add-radio.component';
+import { AddRadioComponent } from './components/info/add-radio/add-radio.component';
 import { LayoutComponent } from './components/layout/layout.component';
 
 const routes: Routes = [
